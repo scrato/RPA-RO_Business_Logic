@@ -23,39 +23,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPA.Presentation", "RPA.Presentation\RPA.Presentation.csproj", "{7FBFD232-6C6E-4A2B-AB85-F8EED7BCB783}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 10
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://h1997422.stratoserver.net:8080/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = RPA.Client.Forms\\RPA.Client.Forms.csproj
-		SccProjectName1 = RPA.Client.Forms
-		SccLocalPath1 = RPA.Client.Forms
-		SccProjectUniqueName2 = RPA.Client.Forms.Core\\RPA.Client.Forms.Core.csproj
-		SccProjectName2 = RPA.Client.Forms.Core
-		SccLocalPath2 = RPA.Client.Forms.Core
-		SccProjectUniqueName3 = RPA.Model\\RPA.Model.csproj
-		SccProjectName3 = RPA.Model
-		SccLocalPath3 = RPA.Model
-		SccProjectUniqueName4 = RPA.Data\\RPA.Data.csproj
-		SccProjectName4 = RPA.Data
-		SccLocalPath4 = RPA.Data
-		SccProjectUniqueName5 = RPA.Business\\RPA.Business.csproj
-		SccProjectName5 = RPA.Business
-		SccLocalPath5 = RPA.Business
-		SccProjectUniqueName6 = RPA.Core\\RPA.Core.csproj
-		SccProjectName6 = RPA.Core
-		SccLocalPath6 = RPA.Core
-		SccProjectUniqueName7 = TestConsole\\TestConsole.csproj
-		SccProjectName7 = TestConsole
-		SccLocalPath7 = TestConsole
-		SccProjectUniqueName8 = RPA.Presentation\\RPA.Presentation.csproj
-		SccProjectName8 = RPA.Presentation
-		SccLocalPath8 = RPA.Presentation
-		SccProjectUniqueName9 = RPA.Application\\RPA.Application.csproj
-		SccProjectName9 = RPA.Application
-		SccLocalPath9 = RPA.Application
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
