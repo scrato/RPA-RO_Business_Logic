@@ -8,11 +8,11 @@ namespace RPA.Model.Charsheet
 {
     public class CharacterProfile : Entity
     {
-                public virtual string FirstName;
-                public virtual string LastName;
-                public virtual int Age;
-                public virtual Race Race;
-                public virtual String Description;
+                public  string FirstName;
+                public  string LastName;
+                public  int Age;
+                public  Race Race;
+                public  String Description;
 
                 
     }

@@ -67,10 +67,6 @@
       <Project>{9E00686C-190F-4808-8C33-46A3F604E1F8}</Project>
       <Name>RPA.Business</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RPA.Client.Forms\RPA.Client.Forms.csproj">
-      <Project>{F4ECDF4D-D29B-492F-B6E9-1D1979EB3B21}</Project>
-      <Name>RPA.Client.Forms</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RPA.Core\RPA.Core.csproj">
       <Project>{C6711B70-CAEE-4459-8328-6655243F024C}</Project>
       <Name>RPA.Core</Name>

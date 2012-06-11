@@ -8,7 +8,7 @@ namespace RPA.Model.Abilities
 {
     public class Language : Entity
     {
-        public virtual string Name;
+        public  string Name;
 
         public static Language Create()
         {

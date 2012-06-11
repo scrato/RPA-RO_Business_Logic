@@ -7,7 +7,7 @@ namespace RPA.Model.Charsheet
 {
     class BaseCharacter : Entity
     {
-        public virtual string Name;
+       // public virtual string Name;
 
     }
 }

@@ -7,6 +7,6 @@ namespace RPA.Model.Abilities
 {
     public class Attribute : Entity
     {
-        public virtual string Name;
+       // public virtual string Name;
     }
 }

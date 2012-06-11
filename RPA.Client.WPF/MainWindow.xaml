@@ -1,0 +1,92 @@
+﻿<Fluent:RibbonWindow x:Class="RPA.Client.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Fluent="clr-namespace:Fluent;assembly=Fluent"
+        Title="RPA - The Roleplay Assistant" Height="686" Width="772">
+    <Grid>
+        <Fluent:Ribbon VerticalAlignment="Top">
+            <!--Contextual Tab Groups-->
+            <Fluent:Ribbon.ContextualGroups>
+                <Fluent:RibbonContextualTabGroup Header="Administration" Visibility="Visible" x:Name="adminGroup" Background="Green" BorderBrush="Green" />
+            </Fluent:Ribbon.ContextualGroups>
+            <!--Backstage-->
+            <Fluent:Ribbon.Menu>
+                <Fluent:Backstage>
+                    <Fluent:BackstageTabControl>
+                        <Fluent:BackstageTabItem Header="Objektverwaltung">
+                            <StackPanel>
+                            <Fluent:Button Header="Übersicht"/>
+                                <Fluent:Button Header="Neue Hauptrolle erstellen">
+                                    <Fluent:Button.ToolTip>
+                                        <Fluent:ScreenTip Title="Erstellt einen neuen Spielercharakter" Text="Diese Funktion führt zu der Erfassungsmaske für einen neuen Spielercharakter (SC)" />
+                                    </Fluent:Button.ToolTip>
+                                </Fluent:Button>
+                            <Fluent:Button Header="Neue Nebenrolle erstellen">
+                                <Fluent:Button.ToolTip>
+                                    <Fluent:ScreenTip Title="Erstellt einen neuen Nichtspielercharakter" Text="Diese Funktion führt zu der Erfassungsmaske für einen neuen Nichtspielercharakter (NSC)" />
+                                </Fluent:Button.ToolTip>
+                                </Fluent:Button>
+                                <Fluent:Button Header="Neues Objekt erstellen">
+                                <Fluent:Button.ToolTip>
+                                    <Fluent:ScreenTip Title="Erstellt ein neues Item" Text="Hierrüber können neue Objekte erfasst werden (Beispielsweise Waffen, Artefakte, Gegenstände)" />
+                                </Fluent:Button.ToolTip>
+                                </Fluent:Button>
+                            </StackPanel>
+                        </Fluent:BackstageTabItem>
+                        <Fluent:BackstageTabItem Header="Abenteuerverwaltung">
+                            <StackPanel>
+                                <Fluent:Button Header="Übersicht"/>
+                                <Fluent:Button Header="Karten" >
+                                <Fluent:Button.ToolTip>
+                                    <Fluent:ScreenTip Title="Wechselt zu der Kartenansicht" Text="Diese Funktion führt zu der Übersicht über die bisher erstellten Karten. Von hier aus kann man neue Karten erstellen oder alte ansehen und bearbeiten." />
+                                </Fluent:Button.ToolTip>
+                                </Fluent:Button>
+                                <Fluent:Button Header="Geschichten">
+                                <Fluent:Button.ToolTip>
+                                    <Fluent:ScreenTip Title="Wechselt in die Geschichtserfassung" Text="Diese Funktion führt zu der Geschichtsverwaltung. Von hier aus kann man die Hintegrundgeschichte erfassen und verwalten." />
+                                </Fluent:Button.ToolTip>
+                                </Fluent:Button>
+                                <Fluent:Button Header="Ausdrucke">
+                                <Fluent:Button.ToolTip>
+                                    <Fluent:ScreenTip Title="Wechselt zu der Ansicht der Ausdrucke" Text="Diese Funktion führt zur Verwaltung von Dokumenten wie Handouts oder handgeschriebener Rätsel." />
+                                </Fluent:Button.ToolTip>
+                                </Fluent:Button>
+                            </StackPanel>
+                        </Fluent:BackstageTabItem>
+                        <Fluent:Button Header="Hilfe" Icon="Images\Blue.png"/>
+                    </Fluent:BackstageTabControl>
+                </Fluent:Backstage>
+            </Fluent:Ribbon.Menu>
+            <!--Tabs-->
+            <Fluent:RibbonTabItem Header="Start">
+                <Fluent:RibbonGroupBox  Header="Ausführen">
+                    <Fluent:Button SizeDefinition="Middle" IsEnabled="False" Name="buttonBack" Header="Zurück">
+                        <Fluent:Button.ToolTip>
+                            <Fluent:ScreenTip Title="Zurück-Knopf" Text="Wenn Sie hierrauf klicken kommen Sie zurück" HelpTopic="Hülfe" DisableReason="Es gibt derzeit kein Zurück!" />
+                        </Fluent:Button.ToolTip>
+                    </Fluent:Button>
+                    <Fluent:Button SizeDefinition="Middle" Name="buttonForward" Header="Vorwärts"  />
+                    
+                    <Fluent:Button SizeDefinition="Large" Name="buttonDo" Header="Etwas tun">
+                        <Fluent:Button.ToolTip>
+                        <Fluent:ScreenTip Title="Die Hilfe naht!" HelpTopic="Hülfe" Text="Test für einen Screentip" />
+                        </Fluent:Button.ToolTip>
+                    </Fluent:Button>
+                    
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+
+
+            <!--Contextual Tabs-->
+            <Fluent:RibbonTabItem Header="Einstellungen" Group="{Binding ElementName=adminGroup}">
+                <Fluent:RibbonGroupBox Header="Verwaltung">
+                    <Fluent:Button Header="Nutzerverwaltung" />
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+        </Fluent:Ribbon>
+   
+        <TabControl VerticalAlignment="Stretch" Margin="147,136,0,0">
+            <TabItem Header="Start"></TabItem> 
+        </TabControl>
+    </Grid>
+</Fluent:RibbonWindow>
